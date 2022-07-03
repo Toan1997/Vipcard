@@ -1,0 +1,187 @@
+#fixContent[data-v-5b7a91ea] {
+    padding-top: 0
+}
+
+.wrapper[data-v-5b7a91ea] {
+    max-width: 710px;
+    margin: 0 auto;
+    font-family: SVN-GothamBook;
+    padding: 20px 54px 6rem;
+    background: hsla(0, 0%, 100%, .3);
+    border-radius: 0;
+    overflow: hidden
+}
+
+.wrapper p[data-v-5b7a91ea] {
+    text-align: center;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    font-feature-settings: "tnum" on, "lnum" on;
+    color: #292929
+}
+
+.wrapper .ctn[data-v-5b7a91ea] {
+    display: none
+}
+
+.wrapper .ctn .container-btn[data-v-5b7a91ea] {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase
+}
+
+.wrapper .ctn .container-btn button[data-v-5b7a91ea] {
+    border: none;
+    border-radius: 8px;
+    background: #0d0c22;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    height: 40px;
+    text-transform: uppercase
+}
+
+.wrapper .ctn .container-btn button img[data-v-5b7a91ea] {
+    height: 18px;
+    width: 18px
+}
+
+.wrapper .ctn .container-btn button span[data-v-5b7a91ea] {
+    font-family: SVN-GothamRegular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .005em;
+    font-feature-settings: "tnum" on, "lnum" on;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-left: 10.28px;
+    text-decoration: none
+}
+
+.wrapper .ctn .container-btn button span a[data-v-5b7a91ea] {
+    font-family: SVN-GothamRegular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: .005em;
+    font-feature-settings: "tnum" on, "lnum" on;
+    color: #fff;
+    text-decoration: none
+}
+
+.wrapper .ctn .container-btn div[data-v-5b7a91ea] {
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 40px
+}
+
+.wrapper .ctn .container-btn div img[data-v-5b7a91ea] {
+    height: 19.5px;
+    width: 16.5px
+}
+
+.wrapper .ctn .container-btn div a[data-v-5b7a91ea], .wrapper .ctn .container-btn div span[data-v-5b7a91ea] {
+    font-family: SVN-GothamRegular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 11.75px;
+    color: #0d0c22;
+    text-decoration: none
+}
+
+.wrapper hr[data-v-5b7a91ea] {
+    margin-bottom: 16px;
+    background: #c4c4c4
+}
+
+.wrapper .item[data-v-5b7a91ea] {
+    background: #f0f0f0;
+    border-radius: 30px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px
+}
+
+.wrapper .item span[data-v-5b7a91ea] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-align: center;
+    max-width: calc(100% - 150px)
+}
+
+.wrapper .item[data-v-5b7a91ea]:not(:last-child) {
+    margin-bottom: 1em
+}
+
+.wrapper .item img[data-v-5b7a91ea] {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%
+}
+
+@media (max-width: 768px) {
+    .wrapper[data-v-5b7a91ea] {
+        padding: 14px 15px 6rem
+    }
+
+    .wrapper .ctn[data-v-5b7a91ea] {
+        display: block
+    }
+
+    .wrapper p[data-v-5b7a91ea] {
+        font-size: 14px
+    }
+
+    .wrapper .item[data-v-5b7a91ea] {
+        background: #f0f0f0;
+        border-radius: 24px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        font-size: 14px
+    }
+
+    .wrapper .item[data-v-5b7a91ea]:not(:last-child) {
+        margin-bottom: 16px
+    }
+
+    .wrapper .item img[data-v-5b7a91ea] {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%
+    }
+}

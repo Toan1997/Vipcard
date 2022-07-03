@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Commercers\CronjobManager\Api\ScheduleManagementInterface" type="Commercers\CronjobManager\Model\ScheduleManagement" />
+    <preference for="Commercers\CronjobManager\Api\ScheduleManagementAdapterInterface" type="Commercers\CronjobManager\Model\ScheduleManagementAdapter" />
+    <preference for="Commercers\CronjobManager\Api\ScheduleRepositoryInterface" type="Commercers\CronjobManager\Model\ScheduleRepository" />
+    <preference for="Commercers\CronjobManager\Api\ScheduleRepositoryAdapterInterface" type="Commercers\CronjobManager\Model\ScheduleRepositoryAdapter" />
+    <preference for="Commercers\CronjobManager\Api\Data\ScheduleSearchResultsInterface" type="Magento\Framework\Api\SearchResults" />
+    <preference for="Commercers\CronjobManager\Api\Data\ScheduleInterface" type="Commercers\CronjobManager\Model\Data\Schedule" />
+    <preference for="Commercers\CronjobManager\Model\Clock" type="Commercers\CronjobManager\Model\SystemClock" />
+    <virtualType name="Magento\Cron\Model\ResourceModel\Schedule\Virtual\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">cron_schedule</argument>
+            <argument name="resourceModel" xsi:type="string">Magento\Cron\Model\ResourceModel\Schedule</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="cronjobmanager_manage_grid_data_source" xsi:type="string">Magento\Cron\Model\ResourceModel\Schedule\Virtual\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="ethanyehuda_cronjobmanager_command_showjobs" xsi:type="object">Commercers\CronjobManager\Console\Command\Showjobs</item>
+                <item name="ethanyehuda_cronjobmanager_command_runjob" xsi:type="object">Commercers\CronjobManager\Console\Command\Runjob</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

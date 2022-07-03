@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="VipCard_Infomation::parent" title="VIP CARD" module="VipCard_Infomation" sortOrder="51" resource="VipCard_Infomation::parent"/>
+        <add id="VipCard_Infomation::user" title="User" module="VipCard_Infomation" sortOrder="10" action="vipcard/user/index" resource="VipCard_Infomation::user" parent="VipCard_Infomation::parent"/>
+    </menu>
+</config>

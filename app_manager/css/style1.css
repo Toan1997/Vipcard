@@ -1,0 +1,232 @@
+#wapper2[data-v-ab9b8fc2] {
+    padding-bottom: 0
+}
+
+.wapper[data-v-ab9b8fc2] {
+    padding-top: 219px;
+    padding-bottom: 0;
+    position: relative
+}
+
+.wapper .ctn-back[data-v-ab9b8fc2] {
+    position: absolute;
+    top: 107px;
+    width: 100%
+}
+
+.wapper .ctn-back .back[data-v-ab9b8fc2] {
+    height: 48px;
+    max-width: 1170px;
+    padding: 16px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-family: SVN-GothamBook
+}
+
+.wapper .ctn-back .back span[data-v-ab9b8fc2] {
+    cursor: pointer
+}
+
+.wapper .ctn-back .back span a[data-v-ab9b8fc2] {
+    text-decoration: none;
+    color: #292929
+}
+
+.wapper .ctn-back .back img[data-v-ab9b8fc2] {
+    cursor: pointer;
+    margin-right: 20px;
+    height: 20px;
+    width: 10px
+}
+
+.wapper .info_block[data-v-ab9b8fc2] {
+    max-width: 710px;
+    margin: auto;
+    margin-top: 5rem;
+    padding-top: 96.5px;
+    padding-bottom: 0;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1
+}
+
+.wapper .info_block .avatar_image[data-v-ab9b8fc2] {
+    width: 193px;
+    height: 193px;
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.wapper .info_block .avatar_image img[data-v-ab9b8fc2] {
+    width: 193px;
+    height: 193px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.wapper .info_block .avatar_image .btn_camera[data-v-ab9b8fc2] {
+    position: absolute;
+    bottom: 15px;
+    right: 3px;
+    padding: 10px;
+    border-radius: 50%;
+    background: hsla(0, 0%, 76.9%, .6);
+    height: 45px;
+    width: 45px
+}
+
+.wapper .info_block .avatar_image .btn_camera img[data-v-ab9b8fc2] {
+    height: 24px;
+    width: 27px;
+    border-radius: 0
+}
+
+.wapper .info_block[data-v-ab9b8fc2]:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: hsla(0, 0%, 100%, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.wapper p[data-v-ab9b8fc2] {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 30px;
+    font-family: SVN-GothamBold;
+    color: #000;
+    line-height: 42px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0
+}
+
+.wapper p img[data-v-ab9b8fc2] {
+    width: 40px;
+    height: 40px;
+    margin-left: 3px;
+    margin-bottom: -3px
+}
+
+@media (max-width: 768px) {
+    #wapper2[data-v-ab9b8fc2] {
+        padding-bottom: 0
+    }
+
+    .wapper[data-v-ab9b8fc2] {
+        padding-top: 109px;
+        padding-bottom: 0
+    }
+
+    .wapper .ctn-back[data-v-ab9b8fc2] {
+        position: absolute;
+        top: 24px;
+        width: 100%;
+        z-index: 10000
+    }
+
+    .wapper .ctn-back .back[data-v-ab9b8fc2] {
+        height: 48px;
+        max-width: 1170px;
+        padding: 16px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-family: SVN-GothamBook
+    }
+
+    .wapper .ctn-back .back span[data-v-ab9b8fc2] {
+        cursor: pointer
+    }
+
+    .wapper .ctn-back .back img[data-v-ab9b8fc2] {
+        cursor: pointer;
+        margin-right: 17px;
+        height: 15px;
+        width: 7.5px
+    }
+
+    .wapper .info_block[data-v-ab9b8fc2] {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-top: 72px
+    }
+
+    .wapper .info_block .avatar_image[data-v-ab9b8fc2] {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        margin: 0 auto;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    .wapper .info_block .avatar_image img[data-v-ab9b8fc2] {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin-bottom: 17px
+    }
+
+    .wapper .info_block .avatar_image .btn_camera[data-v-ab9b8fc2] {
+        position: absolute;
+        bottom: 10px;
+        right: -1px;
+        padding: 10px;
+        border-radius: 50%;
+        background: hsla(0, 0%, 76.9%, .6);
+        height: 27px;
+        width: 27px
+    }
+
+    .wapper .info_block .avatar_image .btn_camera img[data-v-ab9b8fc2] {
+        height: 15px;
+        width: 17px;
+        border-radius: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    .wapper p[data-v-ab9b8fc2] {
+        margin-top: 18px;
+        text-align: center;
+        font-size: 25px;
+        font-family: SVN-GothamRegular;
+        color: #000;
+        line-height: 32px;
+        font-weight: 450;
+        border-bottom: 1px solid grey;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: auto;
+        padding-bottom: 14px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .wapper p img[data-v-ab9b8fc2] {
+        width: 25px;
+        height: 25px;
+        margin-left: 3px
+    }
+}

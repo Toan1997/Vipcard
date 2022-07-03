@@ -1,0 +1,98 @@
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">user_management_listing.user_management_listing_data_source</item>
+            <item name="deps" xsi:type="string">user_management_listing.user_management_listing_data_source</item>
+        </item>
+        <item name="buttons" xsi:type="array">
+            <item name="save" xsi:type="array">
+                <item name="name" xsi:type="string">save</item>
+                <item name="label" xsi:type="string" translate="true">New User</item>
+                <item name="class" xsi:type="string">primary</item>
+                <item name="url" xsi:type="string">vipcard/user/editaction</item>
+                <!-- <  sua link lai > -->
+            </item>
+        </item>
+    </argument>
+    <argument name="context" xsi:type="configurableObject">
+        <argument name="class" xsi:type="string">Magento\Framework\View\Element\UiComponent\Context</argument>
+        <argument name="namespace" xsi:type="string">user_management_listing</argument>
+
+    </argument>
+
+    <settings>
+
+        <spinner>user_columns</spinner>
+        <deps>
+            <dep>user_management_listing.user_management_listing_data_source</dep>
+        </deps>
+    </settings>
+    <dataSource name="user_management_listing_data_source" component="Magento_Ui/js/grid/provider">
+        <settings>
+            <updateUrl path="mui/index/render"/>
+        </settings>
+
+        <aclResource>VipCard_Infomation::parent</aclResource> <!-- ACL , nho lai-->
+
+        <dataProvider class="Magento\Cms\Ui\Component\DataProvider" name="user_management_listing_data_source">
+            <settings>
+                <requestFieldName>user_id</requestFieldName>
+                <primaryFieldName>user_id</primaryFieldName>
+            </settings>
+        </dataProvider>
+    </dataSource>
+
+    <columns name="user_columns">
+        <selectionsColumn name="ids">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="indexField" xsi:type="string">id</item>
+                    <item name="sortOrder" xsi:type="number">1</item>
+                </item>
+            </argument>
+        </selectionsColumn>
+        <column name="user_id">
+            <settings>
+                <filter>text</filter>
+                <editor>
+                    <validation>
+                        <rule name="required-entry" xsi:type="boolean">true</rule>
+                    </validation>
+                    <editorType>text</editorType>
+                </editor>
+                <label translate="true">ID</label>
+            </settings>
+        </column>
+        <column name="name">
+            <settings>
+                <filter>text</filter>
+                <editor>
+                    <validation>
+                        <rule name="required-entry" xsi:type="boolean">true</rule>
+                    </validation>
+                    <editorType>text</editorType>
+                </editor>
+                <label translate="true">Name</label>
+            </settings>
+        </column>
+
+        <column name="created_at">
+            <settings>
+                <filter>text</filter>
+                <editor>
+                    <validation>
+                        <rule name="required-entry" xsi:type="boolean">true</rule>
+                    </validation>
+                    <editorType>text</editorType>
+                </editor>
+                <label translate="true">Created At</label>
+            </settings>
+        </column>
+        <actionsColumn name="actions" class="VipCard\Infomation\Ui\Component\Listing\Columns\Actions">
+            <settings>
+                <indexField>id</indexField>
+            </settings>
+        </actionsColumn>
+    </columns>
+</listing>

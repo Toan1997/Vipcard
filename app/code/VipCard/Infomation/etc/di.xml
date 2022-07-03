@@ -1,0 +1,33 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="user_management_listing_data_source" xsi:type="string">VipCard\Infomation\Model\ResourceModel\VipCard\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="VipCard\Infomation\Model\ResourceModel\VipCard\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">vipcard_user_management</argument>
+            <argument name="resourceModel" xsi:type="string">VipCard\Infomation\Model\ResourceModel\VipCard</argument>
+        </arguments>
+    </virtualType>
+    <!-- Image Uploader -->
+    <virtualType name="VirtualTypeName" type="Magento\Catalog\Model\ImageUploader">
+        <arguments>
+            <argument name="baseTmpPath" xsi:type="string">avatar/tmp/image</argument>
+            <argument name="basePath" xsi:type="string">avatar/image</argument>
+            <argument name="allowedExtensions" xsi:type="array">
+                <item name="jpg" xsi:type="string">jpg</item>
+                <item name="jpeg" xsi:type="string">jpeg</item>
+                <item name="gif" xsi:type="string">gif</item>
+                <item name="png" xsi:type="string">png</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <type name="VipCard\Infomation\Controller\Adminhtml\User\Uploader">
+        <arguments>
+            <argument name="imageUploader" xsi:type="object">VirtualTypeName</argument>
+        </arguments>
+    </type>
+</config>
